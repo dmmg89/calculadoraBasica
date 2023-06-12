@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/pantalla2"
+        android:layout_width="match_parent"
+        android:layout_margin="24px"
+        android:layout_height="110sp"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/strongGrey"
+        android:gravity="bottom|right"
+
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/pantalla1"
+        android:layout_width="match_parent"
+        android:layout_margin="64px"
+        android:layout_height="32sp"
+        android:text=""
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/strongGrey"
+        android:gravity="bottom|right"
+
+        android:enabled="false"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+        
+        <Button
+            style="@style/botonOperacion"
+            android:text="C"
+            android:id="@+id/botonClear"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+            />
+        <Button
+            style="@style/botonOperacion"
+            android:text="Save"
+            android:id="@+id/botonSalvarDatos"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+
+
+            />
+
+        <Button
+            style="@style/botonOperacion"
+            android:text="Const"
+            android:id="@+id/botonConstantes"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton7"
+            android:text="7"
+            android:padding="8px"/>
+
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton8"
+            android:text="8"
+            android:padding="8px"/>
+
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton9"
+            android:text="9"
+            android:padding="8px"/>
+
+        <Button
+           style="@style/botonOperacion"
+            android:background="@drawable/botonredondo"
+            android:id="@+id/botonMas"
+            android:text="+"
+            android:layout_marginLeft="24px"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton4"
+            android:text="4"
+            android:padding="8px"/>
+
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton5"
+            android:text="5"
+            android:padding="8px"/>
+
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton6"
+            android:text="6"
+            android:padding="8px"/>
+
+        <Button
+            android:id="@+id/botonMenos"
+            style="@style/botonOperacion"
+            android:background="@drawable/botonredondo"
+            android:text="-"
+            android:layout_marginLeft="24px"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton1"
+            android:text="1"
+            android:padding="8px"/>
+
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton2"
+            android:text="2"
+            android:padding="8px"/>
+
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton3"
+            android:text="3"
+            android:padding="8px"/>
+
+        <Button
+            style="@style/botonOperacion"
+            android:id="@+id/botonPor"
+            android:background="@drawable/botonredondo"
+            android:text="*"
+            android:layout_marginLeft="24px"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            style="@style/botonNumerico"
+            android:text="+/-"
+            android:padding="8px"
+            android:backgroundTint="@color/secundario"/>
+
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/boton0"
+            android:text="0"
+
+            android:padding="8px"/>
+
+        <Button
+            style="@style/botonNumerico"
+            android:id="@+id/botonPunto"
+            android:text="."
+            android:padding="8px"
+            android:backgroundTint="@color/secundario"/>
+
+        <Button
+            style="@style/botonOperacion"
+            android:id="@+id/botonEntre"
+            android:background="@drawable/botonredondo"
+            android:text="/"
+            android:layout_marginLeft="24px"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="220px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="16px"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En linea"
+                android:textSize="16dp"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/interruptor"
+                android:height="16dp"
+                android:width="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:textColor="@color/secundario"
+                android:backgroundTint="@color/white"/>
+        </LinearLayout>
+
+
+        <Button
+            style="@style/botonOperacion"
+            android:id="@+id/parentesisIzq"
+            android:paddingVertical="8px"
+            android:text="("
+            android:textSize="30sp"
+            android:visibility="invisible"
+
+            />
+        <Button
+            style="@style/botonOperacion"
+            android:id="@+id/parentesisDer"
+            android:paddingVertical="8px"
+            android:text=")"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/equals"
+            style="@style/botonIgual"
+            android:layout_gravity="left"
+            android:layout_marginHorizontal="8px"
+            android:backgroundTint="@color/primario"
+            android:text="=" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
